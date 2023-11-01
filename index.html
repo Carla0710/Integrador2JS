@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punto a Punto Viajes </title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+
+<body>
+<!-- Navbar -->
+<header class="navbar-home">
+<!-- Icono de menú desplegable para pantallas pequeñas -->
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+ <img src="assets/menu.png" alt="Menú" class="menu-icon" id="mobile-menu-icon">
+<img src="assets/logotipo_Site_preto.png" alt="Agencia de Viajes" > 
+<nav class="navbar">
+<label for="menu-toggle" class="menu-label">
+<i class="fa-solid fa-bars"></i>
+</label>
+<input type="checkbox" id="cart-toggle">
+<ul class="navbar-list">
+<li><a href="#productos">Viajes</a></li>
+<li><a href="#about">Sobre Nosotros</a></li>
+<li><a href="#contact">Contacto</a></li>
+</ul>
+<!-- CART -->
+<label for="cart-toggle" class="cart-label">
+<i class="cart-icon">
+<img src="assets/cart-icon.jpg">
+<div id="cart-bubble" class="cart-bubble">0</div>
+</i>  </label>
+<input type="checkbox" id="cart-toggle">
+<div class="cartmenu">
+<h2>Elige tu Viaje</h2>
+<div class="cart-selection">
+<div class="cart-items">
+</div>
+                 
+<div class="cart-line"></div>
+<div class="cart-total">
+<h4>Total </h4>
+<p class="price-total"><span class="total">0</span></p>
+</div>
+<div class="cart-buttons">
+<button class="hoverbtn clickedbtn chekout-btn">Comprar</button>
+</div> 
+<button class="clear-btn" id="clear-cart-btn">Vaciar Carrito</button>
+<div id="clear-cart-modal" class="modal">
+<div class="modal-content">
+<p>¿Estás seguro de que deseas vaciar el carrito?</p>
+<button id="confirm-clear" class="clear-btn">Sí</button>
+<button id="cancel-clear" class="clear-btn">No</button>
+</div>
+  </div>
+<label for="menu-toggle" class="menu-label">
+<span class="menu-icon"><img src="assets/menu.png" alt="Menu"></span>
+</label>  
+</div>  
+</div>    
+<div class="overlay"></div>
+</nav> 
+</header>
+<main>
+      
+<!-- HERO -->
+<section id="hero" >
+<div class="hero-content">
+<h1>¡Tu mejor plan!</h1>
+<p>El mundo te está esperando...</p>
+</div>
+</section>
+        
+<!-- PRODUCTOS -->
+<section id="productos">
+<div class="store-filter">
+        <button class="category hoverbtn" data-category="Todo">Mostrar todo</button>
+        <button class="category hoverbtn" data-category="America">América</button>
+        <button class="category hoverbtn" data-category="Europa">Europa</button>
+        <button class="category hoverbtn" data-category="Africa">África</button>
+        <button class="category hoverbtn" data-category="Asia">Asia</button>
+</div>
+<div id="success-message" class="success-message"> ¡Producto agregado con éxito!
+</div>
+<div class="store-products" id="product-container">
+<!-- Tarjetas generadas desde JavaScript -->
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">Sobre Nosotros</h2>
+<p> Nuestra agencia nació en el año 2000 con la idea de compartir nuestra pasión por descubrir el mundo con ustedes. Con años de experiencia en la industria, entendemos que los viajes no son simplemente una escapada de la rutina diaria, sino una oportunidad para vivir experiencias que enriquecen nuestras vidas.</p>
+<img src="assets/equipo.jpg" alt="equipo">
+</section>
+
+<!--CONTACT-->
+<section id="contact">
+<div class="contact-container">
+<form class="form" id="form" action="contact" novalidate>
+<h2 class="section-title">Contacto</h2>
+<label for="input-name"></label>
+<input type="text" name="name" id="input-name" placeholder="Nombre"id="nombre">
+<label for="input-email"></label>
+<input type="email" name="email" id="input-email" placeholder="e-mail" id="email">
+<textarea name="subject" id="subject" cols="30" rows="10" placeholder="Escribe tu consulta"></textarea>
+<input class="hoverbtn clickedbtn submit-btn" type="submit" value="Enviar" id="submit-btn">
+<p id="form-message"></p>
+</form>
+</div>
+
+<div class="social-section">
+<h2 class="section-title">Redes Sociales</h2>
+<ul class="social-links">
+<li><a href="#"><img src="assets/facebook.png" alt="Facebook"></a></li>
+<li><a href="#"><img src="assets/twitter.png" alt="Twitter"></a></li>
+<li><a href="#"><img src="assets/instagram.png" alt="Instagram"></a></li>
+</ul>
+<div class="app-image-container">
+<img src="assets/app.png" alt="app">
+</div>
+</section>    
+                   
+</main>
+
+<!-- FOOTER -->
+<footer>
+<div class="social">
+<h3>Nos comunicamos de PUNTO a PUNTO</h3>
+</div>
+<div class="copy">
+<p>E-mail: info@noticiastoday.com</p>
+<p>WhatsApp: +54911234567</p>
+<p>© 2023 Punto a Punto Viajes. All rights reserved.</p>
+</footer>
+<script src="index.js"></script> 
+</body>
+</html>           
